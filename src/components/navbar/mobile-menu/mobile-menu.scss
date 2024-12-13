@@ -1,0 +1,43 @@
+.mobile-menu {
+  width: 100%;
+  background-color: $color-white;
+  height: 100%;
+  overflow-y: scroll;
+
+  &__content {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+
+    &--cart {
+      flex-direction: row;
+      align-items: center;
+    }
+    &__item {
+      display: flex;
+      font-size: 18px;
+      align-items: center;
+      padding: 16px 0;
+      opacity: 0.8;
+      justify-content: center;
+
+      &--selected {
+        font-weight: 600;
+        opacity: 1;
+      }
+    }
+    &__cart-count {
+      border-radius: 50%;
+      background-color: $color-primary;
+      color: white;
+      padding: 5px 10px;
+      margin-left: 10px;
+    }
+    &__btn {
+      max-width: 100px;
+      margin: 20px auto;
+    }
+  }
+}

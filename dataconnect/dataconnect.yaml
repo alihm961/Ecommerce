@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "Ecommerce-App"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "Ecommerce-App-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
